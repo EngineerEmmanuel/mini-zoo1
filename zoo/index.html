@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EWENS ZOO</title>
+    <link rel="icon" href="Welcome-zoo.jpg">
+    <script src="zoo.js"></script>
+    <style>
+        body{
+            background-color: black;
+        }
+        img{
+            max-width: 100%;
+            /* width: 200px; */
+            /* padding: 0 5px; */
+            height: auto;
+            overflow: hidden;
+            
+        }
+        .display{
+           width: 700px;
+            height: 400px;
+            /* background-color: blue; */
+            /* background-image: url(Welcome-zoo.jpg); */
+            background-size:cover;
+            background-position: center;
+            /* object-fit: contain; */
+            object-position: center;
+            max-width: 100%;
+            max-height: 400%;
+           
+        }
+        .sectionA{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            text-align: center;
+            background-color: rgb(25, 25, 68);
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .select{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            gap: 10px;
+           margin-top: 80px;
+        }
+        h2{
+            text-align: center;
+            /* margin-top: ; */
+            max-width:100%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: blanchedalmond;
+        }
+        #zoo{
+            border-radius: 8px;
+        }
+        h1{
+            color: blanchedalmond;
+            text-align: center;
+            text-decoration:2px solid yellow underline;
+            font-style: italic;
+            /* padding-bottom: 3px; */
+        }
+        span{
+            color:rgb(25, 25, 68);
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>EWENS ZOO</h1>
+    <h2>Which Animal Would You Like To See?</h2>
+    <div class="sectionA">
+   <div class="display"><img id="zoo"  src="Welcome-zoo.jpg" alt=""></div>
+</div>
+<div class="select">
+    <button onclick="myLion()">Lion</butto>
+    <button onclick="myTiger()"> Tiger </button>
+    <button onclick="myGi()">Giraffe</button>
+    <button onclick="mySq()">Squirrel</button>
+    <button onclick="myRe()">Reset</button>
+</div>
+<script>
+    function myLion(){
+        document.getElementById('zoo').src="male-female-zoo.jpg";
+    }
+    function myTiger(){
+        document.getElementById('zoo').src="tiger-zoo.jpg";
+    }
+    function myGi(){
+        document.getElementById('zoo').src="giraffes-zoo.jpg";
+    }
+    function mySq(){
+        document.getElementById('zoo').src="squirrel-zoo.jpg";
+    }
+    function myRe(){
+        document.getElementById('zoo').src="Welcome-zoo.jpg";
+    }
+</script>
+
+</body>
+</html>
